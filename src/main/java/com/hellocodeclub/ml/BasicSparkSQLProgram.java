@@ -23,7 +23,7 @@ public class BasicSparkSQLProgram {
                 .getOrCreate();
 
 
-        Dataset<Row> df = spark.read().json("C:\\Users\\Subhankar\\Documents\\Dataset\\spark_examples-main\\src\\people.json");
+        Dataset<Row> df = spark.read().json("src\\people.json");
 
 
         df.show();

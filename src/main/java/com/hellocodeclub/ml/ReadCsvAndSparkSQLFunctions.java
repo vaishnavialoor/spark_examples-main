@@ -29,7 +29,7 @@ public class ReadCsvAndSparkSQLFunctions {
         // Read in the Parquet file created above.
 // Parquet files are self-describing so the schema is preserved
 // The result of loading a parquet file is also a DataFrame
-        Dataset<Row> csvFileDF = spark.read().option("header", "true").csv("C:\\Users\\Subhankar\\Documents\\Dataset\\spark_examples-main\\src\\employees.csv");
+        Dataset<Row> csvFileDF = spark.read().option("header", "true").csv("src\\employees.csv");
 
 
         csvFileDF.show(false);
